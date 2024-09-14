@@ -17,6 +17,9 @@ WHERE Id = 1;
 INSERT INTO Clients (FirstName, LastName, City, PhoneNumber, Email)
 VALUES ('Marian', 'Dziwol¹g', 'Szczecin', '321123963', 'iii@iii.pl')
 
+INSERT INTO Clients (FirstName, LastName, City, PhoneNumber, Email)
+VALUES ('Anna', 'Nowaczek', 'Katowice', '568789123', 'aaa@aaa.pl')
+
 INSERT INTO Invoices(Number, ClientNumber, CreatedDate)
 VALUES ('203312', 7, '2024-09-14')
 
@@ -30,8 +33,26 @@ WHERE Id = 4
 INSERT INTO Invoices(Number, ClientNumber, CreatedDate)
 VALUES ('2/2024', 7, '2024-09-14')
 
+INSERT INTO Invoices(Number, ClientNumber, CreatedDate)
+VALUES ('3/2024', 8, '2024-09-14')
+
+INSERT INTO Invoices(Number, ClientNumber, CreatedDate)
+VALUES ('4/2024', 8, '2024-09-14')
+
 INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
 VALUES (4,1,1)
 
 INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
 VALUES (6,1,2)
+
+INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
+VALUES (4,4,5)
+
+INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
+VALUES (6,4,10)
+
+INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
+VALUES (7,4,3)
+
+INSERT INTO InvoicePositions (InvoiceId,ProductId, Quantity)
+VALUES (8,4,4)
